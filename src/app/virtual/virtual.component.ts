@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VirtualComponent implements OnInit {
 
-  constructor() { }
+  personas = Array( 500 ).fill( 0 );
+
+  constructor() {
+    console.log( this.personas )
+  }
 
   ngOnInit(): void {
   }
